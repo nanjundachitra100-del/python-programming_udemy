@@ -1,1 +1,1 @@
-students=["chitra,karthik"]
+students=["chitrakarthik"]
