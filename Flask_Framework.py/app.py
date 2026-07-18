@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask ,render_template
 
 #creating an instance of the flask framework
 
@@ -11,7 +11,7 @@ def welcome():
 
 @app.route("/index")
 def index():
-    return "welcome dear!"
+    return render_template("index.html")
 
 
 if __name__ == "__main__":   #from here only the execution of the app strarts
