@@ -5,7 +5,7 @@ from flask import Flask ,render_template
 #WSGI application
 app=Flask(__name__)
 
-@app.route("/")#home page
+@app.route("")#home page
 def welcome():
     return "welcome to this class.This should be great"
 
