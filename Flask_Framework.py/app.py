@@ -13,6 +13,16 @@ def welcome():
 def index():
     return render_template("index.html")
 
+@app.route("/success/<int:score>")
+def success(score):
+    res=""
+    if score >=55:
+        res="Passed"
+    else:
+        res="Failed"
+
+    return render_template("result.html",result=res)
+
 
 if __name__ == "__main__":   #from here only the execution of the app strarts
     app.run(debug=True)
