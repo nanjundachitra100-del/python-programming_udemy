@@ -23,6 +23,14 @@ def success(score):
 
     return render_template("result.html",result=res)
 
+@app.route("/student")
+def student():
+    name="Karthik"
+    age=18
+    village="Yettukodi"
+    college="REVA_University"
+    return render_template("result.html",name=name,age=age,place=village,college=college)
+
 
 if __name__ == "__main__":   #from here only the execution of the app strarts
     app.run(debug=True)
